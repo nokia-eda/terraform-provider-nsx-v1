@@ -1,0 +1,38 @@
+provider:
+  name: nsx
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/nsx.eda.nokia.com
+      method: GET
+
+  nsx_plugin_instance:
+    read:
+      path: /apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name}
+      method: GET
+
+  nsx_plugin_instance_list:
+    read:
+      path: /apps/nsx.eda.nokia.com/v1/nsxplugininstances
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/nsx.eda.nokia.com/v1
+      method: GET
+
+resources:
+  nsx_plugin_instance:
+    create:
+      path: /apps/nsx.eda.nokia.com/v1/nsxplugininstances
+      method: POST
+    read:
+      path: /apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name}
+      method: GET
+    update:
+      path: /apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name}
+      method: PUT
+    delete:
+      path: /apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name}
+      method: DELETE

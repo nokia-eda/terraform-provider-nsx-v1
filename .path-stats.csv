@@ -1,0 +1,16 @@
+Path,Method,Schema,Model Name,Supported,Datasource,Resource
+/apps/nsx.eda.nokia.com,GET,AppGroup,app_group,true,true,false
+/apps/nsx.eda.nokia.com/v1,GET,ResourceList,resource_list,true,true,false
+/apps/nsx.eda.nokia.com/v1/_ui/{pathname},GET,UIResult,,false,false,false
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances,DELETE,com.nokia.eda.nsx.v1.NSXPluginInstanceList,,false,false,false
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances,GET,com.nokia.eda.nsx.v1.NSXPluginInstanceList,nsx_plugin_instance_list,true,true,false
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances,POST,com.nokia.eda.nsx.v1.NSXPluginInstance,nsx_plugin_instance,true,false,true
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances/_deleted,GET,com.nokia.eda.nsx.v1.NSXPluginInstance_DeletedResources,,false,false,false
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name},DELETE,Status,nsx_plugin_instance,true,false,true
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name},GET,com.nokia.eda.nsx.v1.NSXPluginInstance,nsx_plugin_instance,true,true,true
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name},PATCH,Patch,,false,false,false
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name},PUT,com.nokia.eda.nsx.v1.NSXPluginInstance,nsx_plugin_instance,true,false,true
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name}/_targets,GET,IntentTargets,,false,false,false
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/nsx.eda.nokia.com/v1/nsxplugininstances/{name}/_topology,POST,K8STopologyRequest,,false,false,false
